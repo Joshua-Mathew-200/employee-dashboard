@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {
-  BrowserRouter,
+  HashRouter,
   NavLink,
   Routes,
   Route,
@@ -205,7 +205,7 @@ function EmployeeForm() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav className="navbar navbar-dark bg-dark">
         <div className="container d-flex flex-wrap gap-3">
           <NavLink to="/" className="navbar-brand">
@@ -237,7 +237,7 @@ function App() {
           />
         </Routes>
       </main>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
